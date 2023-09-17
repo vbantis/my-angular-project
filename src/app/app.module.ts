@@ -9,6 +9,7 @@ import { Page2Component } from './page2/page2.component';
 import { Page3Component } from './page3/page3.component';
 import { RowDetailsComponent } from './row-details/row-details.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,10 +18,12 @@ import { HttpClientModule } from '@angular/common/http';
     Page1Component,
     Page2Component,
     Page3Component,
-    RowDetailsComponent
+    RowDetailsComponent,
+    
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     HttpClientModule // <-- Add this line
   ],
